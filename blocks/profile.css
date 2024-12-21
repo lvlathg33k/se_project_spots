@@ -1,0 +1,35 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+.profile__avatar {
+  border-radius: 8px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.profile__name {
+  margin: 0;
+}
+
+.profile__description {
+  margin: 12px 0 0;
+}
+
+.profile__edit-btn {
+  margin-top: auto;
+  padding: 0;
+}
+
+.profile__post-btn {
+  height: 52px;
+  width: 149px;
+  margin: auto 0 0 auto;
+  padding: 0;
+}
