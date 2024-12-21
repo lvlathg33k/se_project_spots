@@ -2,10 +2,11 @@
   background-color: #fff;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .header__logo {
   padding: 10px 0;
-  height: 46px;
+  height: 26px;
   width: 94px;
 }
