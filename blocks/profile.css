@@ -21,6 +21,12 @@
   font-size: 32px;
   line-height: 32px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__description {
@@ -29,6 +35,12 @@
   line-height: 16px;
   font-weight: 500;
   color: rgba(33, 33, 33, 0.7);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 300px;
 }
 
 .profile__edit-btn {
@@ -69,7 +81,8 @@
   .profile {
     flex-direction: column;
     padding: 20px 0;
-    min-width: 288px;
+    max-width: 288px;
+    margin: 0 auto;
   }
 
   .profile__avatar {
@@ -79,6 +92,7 @@
   .profile__column {
     align-items: center;
     margin-left: 0;
+    text-align: center;
   }
 
   .profile__description {
