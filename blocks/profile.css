@@ -25,8 +25,10 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -39,6 +41,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 300px;
 }
@@ -51,10 +54,6 @@
   display: flex;
   gap: 8px;
   font-weight: 500;
-  color: rgba(33, 33, 33, 0.7);
-}
-
-.profile__edit-icon {
   color: rgba(33, 33, 33, 0.7);
 }
 
@@ -71,6 +70,8 @@
   justify-content: center;
   font-weight: 500;
   align-items: center;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .profile__plus-icon {
@@ -93,6 +94,11 @@
     align-items: center;
     margin-left: 0;
     text-align: center;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .profile__description {
