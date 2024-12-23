@@ -32,11 +32,11 @@
   background-color: transparent;
   opacity: 40%;
   padding: 0;
-  background-image: url(../images/Like\ Icon.svg);
+  background-image: url(../images/LikeIcon.svg);
   background-repeat: no-repeat;
 }
 
-.card__like-button:hover{
+.card__like-button:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -58,3 +58,4 @@
     width: 18px;
     padding-right: 23px;
   }
+}
