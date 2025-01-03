@@ -36,6 +36,10 @@ const modalEditDescriptionInput = editModal.querySelector("#description-edit");
 const editModalSubmitButton = editModal.querySelector(".modal__submit-btn");
 const editFormElement = editModal.querySelector(".modal__form");
 
+const cardModal = document.querySelector("#card-modal");
+const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
+const cardModalBtn = document.querySelector(".profile__post-btn");
+
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
@@ -54,30 +58,44 @@ function getCardElement(data) {
   return cardElement;
 }
 
-function openModal() {
-  modalEditNameInput.value = profileName.textContent;
-  modalEditDescriptionInput.value = profileDescription.textContent;
-  editModal.classList.add("modal_opened");
+function openModal(modal) {
+  modal.classList.add("modal_opened");
 }
 
-function closeModal() {
-  editModal.classList.remove("modal_opened");
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
 }
 
 function submitProfileForm(evt) {
   evt.preventDefault();
   profileName.textContent = modalEditNameInput.value;
   profileDescription.textContent = modalEditDescriptionInput.value;
-  closeModal();
+  closeModal(editModal);
 }
 
-profileEditButton.addEventListener("click", openModal);
+profileEditButton.addEventListener("click", () => {
+  modalEditNameInput.value = profileName.textContent;
+  modalEditDescriptionInput.value = profileDescription.textContent;
+  openModal(editModal);
+});
 
-editModalCloseButton.addEventListener("click", closeModal);
+editModalCloseButton.addEventListener("click", () => {
+  closeModal(editModal);
+});
+
+cardModalBtn.addEventListener("click", () => {
+  modalEditNameInput.value = profileName.textContent;
+  modalEditDescriptionInput.value = profileDescription.textContent;
+  openModal(cardModal);
+});
+
+cardModalCloseBtn.addEventListener("click", () => {
+  closeModal(cardModal);
+});
 
 editFormElement.addEventListener("submit", submitProfileForm);
 
-for (let i = 0; i < intialCards.length; i++) {
-  const cardElement = getCardElement(intialCards[i]);
+intialCards.forEach((card) => {
+  const cardElement = getCardElement(card);
   cardsList.prepend(cardElement);
-}
+});

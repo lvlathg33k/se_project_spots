@@ -75,6 +75,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                name="name"
               />
             </label>
             <label for="description-edit" class="modal__label">
@@ -84,6 +85,40 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                name="description"
+              />
+            </label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal" id="card-modal">
+        <div class="modal__container">
+          <div class="modal__header">
+            <h2 class="modal__title">New Post</h2>
+            <button type="button" class="modal__close-btn">
+              <img src="./images/Group27.svg" alt="close icon" />
+            </button>
+          </div>
+          <form name="add-card" class="modal__form" id="add-card-form">
+            <label for="add-card-link" class="modal__label">
+              Image Link
+              <input
+                id="add-card-link"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+                name="link"
+              />
+            </label>
+            <label for="add-card-name" class="modal__label">
+              Caption
+              <input
+                id="add-card-name"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+                name="name"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
