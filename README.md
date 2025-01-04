@@ -1,17 +1,20 @@
-# Project 3: Spots
+# Project: Spots
 
-This project shows my learning experience creating responsive design.
+This project shows my learning experience throughout my TripleTen bootcamp.
 
 **Technology used**
 
 - CSS
 - HTML
+- JavaScript
 - Vscode
 - github
 
 **Techniques used**
 
-In this project, I learned that instead of using explicit sizing, proportional sizing can be used. This allows elements to shrink/grow to the space available on whatever screen is used to view the page. This can be done with decimals, percentages and using units of the viewers screen. I also learned to use media queries for when the entire layout may need to be adjusted for extremely different screen types(example:a site that was built for desktop view being viewed on a mobile screen).
+This project is ongoing and is broken up into stages. Earlier on in the course, I learned how to build a basic page with HTML. Then styles were added. Throughout this process, BEM practices are prioritized. As iterations were produced, I learned how to use bash and github. Much of this learning took place in simpler, earlier projects but the skills are practiced again here. The first stage of this project then tasked me with responsive design using mostly styling methods like media queries. Over the next 2 stages I learned some JavaScript to acheive a grid layout and making the page interactive. Have fun playing around with the buttons!
+
+I am currently working on the 5th stage.
 
 ## Deployment
 
@@ -21,4 +24,5 @@ https://lvlathg33k.github.io/se_project_spots/
 
 ## Video Overview
 
+This video goes over the stage of the project where responsive design was acheived.
 https://drive.google.com/file/d/1-Bw7VCnJfnOu9yKgJHGKDpDHeh5gS4fH/view?usp=sharing
