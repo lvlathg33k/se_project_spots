@@ -15,6 +15,7 @@
 
 .card__delete-button:hover {
   background-image: url(../images/State=Hover.png);
+  cursor: pointer;
 }
 
 .card__image {
