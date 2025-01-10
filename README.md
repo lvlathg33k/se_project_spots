@@ -12,9 +12,9 @@ This project showcases my learning experience throughout my TripleTen bootcamp.
 
 **Techniques used**
 
-This project is ongoing and is broken up into stages. Earlier on in the course, I learned how to build a basic page with HTML. Then styles were added. Throughout this process, BEM practices are prioritized. As iterations were produced, I learned how to use bash and github. Much of this learning took place in simpler, earlier projects but the skills are practiced again here. The first stage of this project then tasked me with responsive design using mostly styling methods like media queries. Over the next 2 stages I learned JavaScript to acheive a grid layout and making the page interactive. Have fun playing around with the buttons!
+This project is ongoing and is broken up into stages. Earlier on in the course, I learned how to build a basic page with HTML. Then styles were added. Throughout this process, BEM practices are prioritized. As iterations were produced, I learned how to use bash and github. Much of this learning took place in simpler, earlier projects but the skills are practiced again here. The first stage of this project then tasked me with responsive design using mostly styling methods like media queries. Over the next 2 stages I learned JavaScript to acheive a grid layout and making the page interactive. Then I learned to add validation for forms.
 
-I am currently working on the next stage involving more JavaScript.
+More to come!
 
 ## Deployment
 
