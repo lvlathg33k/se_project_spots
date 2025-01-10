@@ -26,10 +26,20 @@ const hasInvalidInput = (inputList) => {
   });
 };
 
+const disableButton = (buttonEl) => {
+  buttonEl.disabled = true;
+  buttonEl.classList.add("modal__submit-btn_inactive");
+};
+
+const resetValidation = (formEl, inputList) => {
+  inputList.forEach((input) => {
+    hideInputError(formEl, input);
+  });
+};
+
 const toggleButtonState = (inputList, buttonEl) => {
   if (hasInvalidInput(inputList)) {
-    buttonEl.disabled = true;
-    buttonEl.classList.add("modal__submit-btn_inactive");
+    disableButton(buttonEl);
   } else {
     buttonEl.classList.remove("modal__submit-btn_inactive");
     buttonEl.disabled = false;
