@@ -34,6 +34,7 @@ const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 const profilePostBtn = document.querySelector("#profile-post-btn");
 
+const modals = document.querySelectorAll(".modal");
 const editModal = document.querySelector("#edit-profile-modal");
 const modalEditNameInput = editModal.querySelector("#name-edit");
 const modalEditDescriptionInput = editModal.querySelector("#description-edit");
@@ -85,6 +86,12 @@ function getcardEL(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  const handleEscapeKeyPress = (event) => {
+    if (event.key === "Escape") {
+      closeModal(modal);
+    }
+  };
+  document.addEventListener("keydown", handleEscapeKeyPress);
 }
 
 closeBtn.forEach((button) => {
@@ -94,7 +101,16 @@ closeBtn.forEach((button) => {
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscapeKeyPress);
 }
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
 
 function submitProfileForm(evt) {
   evt.preventDefault();
