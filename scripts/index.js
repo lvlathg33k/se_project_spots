@@ -100,7 +100,7 @@ function submitProfileForm(evt) {
   evt.preventDefault();
   profileName.textContent = modalEditNameInput.value;
   profileDescription.textContent = modalEditDescriptionInput.value;
-  disableButton(profilePostBtn);
+  disableButton(profilePostBtn, settings);
   closeModal(editModal);
 }
 
@@ -113,14 +113,18 @@ function submitCardForm(evt) {
   const cardEL = getcardEL(inputValues);
   cardsList.prepend(cardEL);
   evt.target.reset();
-  disableButton(cardSubmitBtn);
+  disableButton(cardSubmitBtn, settings);
   closeModal(cardModal);
 }
 
 profileEditButton.addEventListener("click", () => {
   modalEditNameInput.value = profileName.textContent;
   modalEditDescriptionInput.value = profileDescription.textContent;
-  resetValidation(editFormEl, [modalEditNameInput, modalEditDescriptionInput]);
+  resetValidation(
+    editFormEl,
+    [modalEditNameInput, modalEditDescriptionInput],
+    settings
+  );
   openModal(editModal);
 });
 
