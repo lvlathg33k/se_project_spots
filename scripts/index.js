@@ -86,11 +86,6 @@ function getcardEL(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
-  const handleEscapeKeyPress = (event) => {
-    if (event.key === "Escape") {
-      closeModal(modal);
-    }
-  };
   document.addEventListener("keydown", handleEscapeKeyPress);
 }
 
@@ -106,7 +101,10 @@ function closeModal(modal) {
 
 const handleEscapeKeyPress = (event) => {
   if (event.key === "Escape") {
-    closeModal(modal);
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
   }
 };
 
