@@ -104,6 +104,12 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleEscapeKeyPress);
 }
 
+const handleEscapeKeyPress = (event) => {
+  if (event.key === "Escape") {
+    closeModal(modal);
+  }
+};
+
 modals.forEach((modal) => {
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
