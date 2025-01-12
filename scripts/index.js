@@ -40,7 +40,7 @@ const modalEditNameInput = editModal.querySelector("#name-edit");
 const modalEditDescriptionInput = editModal.querySelector("#description-edit");
 const editModalSubmitButton = editModal.querySelector(".modal__submit-btn");
 const editFormEl = document.forms["edit-profile-form"];
-const closeBtn = document.querySelectorAll(".modal__close-btn");
+const closeBtns = document.querySelectorAll(".modal__close-btn");
 
 const cardModal = document.querySelector("#card-modal");
 const cardForm = cardModal.querySelector(".modal__form");
@@ -89,7 +89,7 @@ function openModal(modal) {
   document.addEventListener("keydown", handleEscapeKeyPress);
 }
 
-closeBtn.forEach((button) => {
+closeBtns.forEach((button) => {
   const popup = button.closest(".modal");
   button.addEventListener("click", () => closeModal(popup));
 });
